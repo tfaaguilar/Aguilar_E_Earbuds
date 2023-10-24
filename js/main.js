@@ -4,14 +4,6 @@
   const model = document.querySelector("#model");
   const hotspots = document.querySelectorAll(".Hotspot");
 
-  const infoBoxes = [
-    {
-      tittle:"hotspot1",
-      text: "explicacion",
-      image: "images/copperinsulation.jpg"
-    }
-  ];
-
   //functions
   function modelLoaded() {
     //console.log(hotspots);
@@ -19,24 +11,6 @@
       hotspot.style.display = "block";
     });
   }
-
-  function loadInfo() {
-    infoBoxes.forEach((infoBox, index) => {
-      let selected = document.querySelector(`#hotspot-${index+1}`);
-      //document.createElement('h2');
-      //.textContent = infoBox.tittle
-      //document.createElement('p');
-      //.textContent = infoBox.text;
-      console.log(selected);
-      console.log(infoBox.tittle);
-      console.log(infoBox.text);
-
-      //selected.appendChild();
-      //selected.appendChild();
-
-    })  
-  }
-  loadInfo
 
   function showInfo() {
     //console.log(this.slot);
