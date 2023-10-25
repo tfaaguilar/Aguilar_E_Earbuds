@@ -22,18 +22,20 @@
 
   function loadInfo() {
     infoBoxes.forEach((infoBox, index) => {
-      let selected = document.querySelector(`#hotspot-${index+1}`);
-      //document.createElement('h2');
-      //.textContent = infoBox.tittle
-      //document.createElement('p');
-      //.textContent = infoBox.text
+      let selected = document.querySelector(`#hotspot-${index + 1}`);
+      
+      const titleElement = document.createElement('h2');
+      titleElement.textContent = infoBox.tittle;
+
+      const textElement = document.createElement('p');
+      textElement.textContent = infoBox.text;
 
       console.log(selected);
       console.log(infoBox.tittle);
       console.log(infoBox.text);
 
-      //selected.appendChild();
-      //selected.appendChild();
+       selected.appendChild(titleElement);
+      selected.appendChild(textElement);
 
     })
   }
