@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="28.81" height="28.54" viewBox="0 0 28.81 28.54">
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" width="23.67" height="25.18" viewBox="0 0 23.67 25.18">
   <defs>
     <style>
       .cls-1 {
-        fill: #38428b;
-        stroke: #fff;
+        fill: #3A4AD9;
+       
         stroke-linejoin: round;
-        stroke-width: 1.5px;
       }
     </style>
   </defs>
   <g id="Layer_1-2" data-name="Layer 1">
-    <polygon class="cls-1" points="23.87 24.65 15.7 21.56 8.53 26.54 8.95 17.82 2 12.54 10.42 10.24 13.29 2 18.08 9.29 26.81 9.48 21.35 16.29 23.87 24.65"/>
+    <path id="Icon_awesome-star-of-life" data-name="Icon awesome-star-of-life" class="cls-1" d="m22.79,16.29l-6.42-3.7,6.42-3.7c.36-.21.49-.67.28-1.03,0,0,0,0,0,0l-1.51-2.62c-.21-.36-.67-.49-1.03-.28l-6.42,3.7V1.26c0-.42-.34-.76-.76-.76h-3.02c-.42,0-.76.34-.76.76h0v7.41l-6.42-3.7c-.36-.21-.82-.08-1.03.28l-1.51,2.62c-.21.36-.08.82.28,1.03,0,0,0,0,0,0l6.42,3.7-6.42,3.7c-.36.21-.49.67-.28,1.03,0,0,0,0,0,0l1.51,2.62c.21.36.67.49,1.03.28l6.42-3.7v7.41c0,.42.34.76.76.76h3.02c.42,0,.76-.34.76-.76h0v-7.41l6.42,3.7c.36.21.82.08,1.03-.28,0,0,0,0,0,0l1.51-2.62c.21-.36.09-.82-.28-1.03,0,0,0,0,0,0Z"/>
   </g>
 </svg>
