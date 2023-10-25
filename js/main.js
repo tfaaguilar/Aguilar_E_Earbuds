@@ -7,9 +7,25 @@
   const infoBoxes = [
     {
         tittle: "Volume, your way",
-        text: "Adjust the volume to suit your preferences and immerse yourself in your music or calls exactly how you like it",
-        image: "images/volume.png"
+        text: "Experience customizable audio control with our earbuds. Adjust the volume to suit your preferences and immerse yourself in your music or calls exactly how you like it.",
+        image: "images/volume.png",
+    },
+    {
+        tittle: "Play, Pause and More",
+        text: "Take full control of your audio playback with ease. Play, pause, skip tracks, and even answer calls effortlessly, all at your fingertips.",
+        image:"images/control.png",
+    },
+    {
+        tittle: "All day comfort",
+        text: "Enjoy exceptional comfort that lasts all day. Our earbuds are designed for extended wear, ensuring you can listen to your favorite tunes or make calls in complete comfort from morning to night.",
+        image:"images/plastic_pin.png",
+    },
+    {
+        tittle: "Charging fast",
+        text: "Stay powered up and on the go. Our earbuds charge quickly, so you can spend less time waiting and more time enjoying your music or staying connected with your calls.",
+        image:"images/battery.png",
     }
+
   ];
 
   //functions
@@ -30,12 +46,16 @@
       const textElement = document.createElement('p');
       textElement.textContent = infoBox.text;
 
+      const imageElement = document.createElement('img');
+      imageElement.src = infoBox.image;
+
       console.log(selected);
       console.log(infoBox.tittle);
       console.log(infoBox.text);
 
-       selected.appendChild(titleElement);
+      selected.appendChild(titleElement);
       selected.appendChild(textElement);
+      selected.appendChild(imageElement);
 
     })
   }
