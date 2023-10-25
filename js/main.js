@@ -1,5 +1,6 @@
 (() => {
-  //console.log("IIFE Fired");
+  console.log("IIFE Fired");
+
   //variables
   const model = document.querySelector("#model");
   const hotspots = document.querySelectorAll(".Hotspot");
@@ -25,12 +26,11 @@
         text: "Stay powered up and on the go. Our earbuds charge quickly, so you can spend less time waiting and more time enjoying your music or staying connected with your calls.",
         image:"images/battery.png",
     }
-
   ];
 
   //functions
   function modelLoaded() {
-    //console.log(hotspots);
+    console.log(hotspots);
     hotspots.forEach(hotspot => {
       hotspot.style.display = "block";
     });
