@@ -4,11 +4,55 @@
     <title>BeatBuds</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/grid.css" rel="stylesheet" />
     <link href="css/main.css" rel="stylesheet"/>
-    
   </head>
+
+
   <body>
-   <model-viewer id="model" src="model/Aguilar_Estefania_Earbuds_hotspot.gltf"
+
+    <h1 class="hidden">Estefania Aguilar Portfolio</h1>
+<header class="grid-con" id="main-header">
+    <nav id="main-nav" class="box col-start-1 col-end-2 m-col-start-7 m-col-end-12"><h2 class="hidden">Nav</h2>
+      <button id="button"></button>
+        <div id="burger-con">
+            <ul id="burger-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>  
+    </nav>
+    <div class="box col-start-3 col-end-5 m-col-start-2 m-col-end-3" id="logo">Logo</div>
+    
+</header>
+    <section class="grid-con" id="hero-con">
+        <h2 class="hidden">Hero image</h2>
+        <div class="box col-span-full">Hero Image</div>
+    </section>
+    
+   
+    <section class="grid-con" id="contributions">
+    <h2 class="box col-span-full">Contributions</h2>
+        <div class="box col-span-full m-col-start-1 m-col-end-5">User Experience</div>
+        <div class="box col-span-full m-col-start-5 m-col-end-9">Web Development</div>
+        <div class="box col-span-full m-col-start-9 m-col-end-13">Multimedia Production</div>
+    </section>
+     
+    <section class="grid-con" id="projects">
+    <h2 class="box col-span-full">Portions of my Projects</h2>
+        <div class="box col-span-full m-col-span-3">Project 1</div>
+        <div class="box col-span-full m-col-span-3">Project 2</div>
+        <div class="box col-span-full m-col-span-3">Project 3</div>
+        <div class="box col-span-full m-col-span-3">Project 4</div>
+    </section>
+    
+
+   
+   <!--
+    <div>
+    <model-viewer id="model" src="model/Aguilar_Estefania_Earbuds_hotspot.gltf"
    ar ar-modes="webxr scene-viewer quick-look"
   camera-controls poster="images/poster.webp"
    shadow-intensity="1">
@@ -43,8 +87,16 @@
       <div id="ar-prompt">
           <img src="images/ar_hand_prompt.png">
       </div>
-    </model-viewer>  
+    </model-viewer> 
+</div> 
+    -->
+
+     <footer class="grid-con"> 
+        <div class="box col-span-full">Footer</div>
+    </footer>
+
     <!-- Loads <model-viewer> for browsers: -->
+        
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"></script>
     <script src="js/main.js"></script>

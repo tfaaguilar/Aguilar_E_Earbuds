@@ -1,3 +1,25 @@
+@font-face {
+  font-family: alataregular;
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Alata-Regular.ttf.woff") format("woff"), url("../fonts/Alata-Regular.ttf.woff2") format("woff2");
+}
+body {
+  font-family: "alataregular", helvetica, arial, sans-serif;
+}
+
+h2 {
+  font-family: "alataregular", helvetica, arial;
+  font-size: 28px;
+  color: #f2d8d8;
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+
 model-viewer {
   width: auto;
   max-width: 1200px;

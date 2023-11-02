@@ -1,0 +1,3 @@
+@use 'mixins' as m;
+
+@include m.fontFace(alataregular, "../fonts/Alata-Regular.ttf");
