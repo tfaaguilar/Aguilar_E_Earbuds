@@ -11,7 +11,7 @@ body {
 h2 {
   font-family: "alataregular", helvetica, arial;
   font-size: 28px;
-  color: #f2d8d8;
+  color: #A27B5C;
   margin-bottom: 20px;
 }
 
@@ -21,7 +21,7 @@ p {
 }
 
 #main-header {
-  background-color: #fff;
+  background-color: #3F4E4F;
   margin-bottom: 20px;
 }
 #main-header #logo {
@@ -65,7 +65,7 @@ p {
   display: block;
   padding: 5px 0 10px 0;
   text-align: center;
-  color: #F2D8D8;
+  color: #dcd8f2;
   text-decoration: none;
 }
 #main-header #main-nav ul li a:hover {
@@ -112,19 +112,45 @@ p {
   }
 }
 footer {
-  height: 150px;
+  height: 350px;
 }
 
 #hero-con {
-  height: 400px;
+  height: 600px;
 }
 
-#contributions div {
-  height: 500px;
+#atributes div {
+  height: 300px;
 }
 
-#projects div {
-  height: 400px;
+#hotspots div {
+  height: 600px;
+}
+
+#caracteristics div {
+  height: 300px;
+}
+
+#xray div {
+  height: 600px;
+}
+
+#xray a {
+  margin-left: 500px;
+  margin-right: 500px;
+}
+
+#options div {
+  height: 200px;
+}
+
+#plastic div {
+  height: 300px;
+}
+
+#plastic a {
+  margin-left: 500px;
+  margin-right: 500px;
 }
 
 model-viewer {
