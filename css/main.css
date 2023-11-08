@@ -161,6 +161,10 @@ model-viewer {
   margin: 0 auto;
 }
 
+#hotspots div {
+  margin-bottom: 100px;
+}
+
 .Hotspot {
   background: url(../images/hotspot.svg) center no-repeat;
   border: 0px;
