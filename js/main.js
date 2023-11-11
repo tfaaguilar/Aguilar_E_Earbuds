@@ -93,16 +93,11 @@ const logo = document.getElementById('logo');
   loadInfo();
 
   function showInfo() {
-    //console.log(this.slot);
-    //console.log(`#${this.slot}`);
-    //since the slot value matches the id value I can use the slot value as a selector to get to the div I want.
     let selected = document.querySelector(`#${this.slot}`);
     gsap.to(selected, 1, { autoAlpha: 1 });
   }
 
   function hideInfo() {
-    //console.log(this.slot);
-    //console.log(`#${this.slot}`);
     let selected = document.querySelector(`#${this.slot}`);
     gsap.to(selected, 1, { autoAlpha: 0 });
   }
@@ -116,4 +111,54 @@ const logo = document.getElementById('logo');
   });
 })();
 
-// In this version, the event listeners use regular functions instead of arrow functions, so the "this" keyword inside the event listeners will refer to the DOM element that triggered the event.
+
+// Scrolling
+
+(() => {
+    const canvas = document.querySelector("#explode-view");
+    const context = canvas.getContext("2d");
+    canvas.width = 1920;
+    canvas.height = 1080;
+
+    const frameCount = 450; // 450 imagenes from Benett
+
+    const images = []; // an array to hold all of our images
+    //create an object literal with a property frame to hold the current frame
+    const buds = {
+        frame: 0
+    };
+
+    for (let i = 0; i < frameCount; i++) {
+        //console.log(i);
+        // const img = new Image(); otra forma:
+        const img = document.createElement("img");
+        // need to recreate a string: images/explode_0001.webp
+        img.src = `images/explode_${(i + 1).toString().padStart(4, '0')}.webp`;
+        images.push(img);
+    }
+    //console.table(images)
+
+    //Not actually animating a DOM element, but rather an object wich contains a frame count
+    gsap.to(buds, {
+        frame: 449,
+        snap: "frame", // to get full numbers instead of decimals
+        scrollTrigger: {
+            trigger: "#explode-view", // our canvas element is gonna be the trigger
+            pin: true,
+            scrub: 1,
+            start: "top top",
+            markers: true
+        },
+        onUpdate: render
+    })
+
+    images[0].addEventListener("onload", render);
+
+    function render() {
+        //console.log(buds.frame);
+        //console.log(images[buds.frame]);
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.drawImage(images[buds.frame], 0, 0);
+    }
+
+})();
