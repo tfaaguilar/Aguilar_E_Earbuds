@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 @font-face {
   font-family: alataregular;
   font-weight: normal;
@@ -9,14 +10,14 @@ body {
 }
 
 h2 {
-  font-family: "alataregular", helvetica, arial;
+  font-family: "Dosis", sans-serif;
   font-size: 28px;
   color: #E6E2C3;
   margin-bottom: 20px;
 }
 
 h3 {
-  font-family: "alataregular", helvetica, arial;
+  font-family: "Dosis", sans-serif;
   font-size: 20px;
   color: #E6E2C3;
   margin-bottom: 20px;
@@ -30,11 +31,19 @@ p {
 
 body {
   background-color: #565575;
+  font-family: "Dosis", sans-serif;
 }
 
 a {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+}
+
+#main-nav {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  border-left: 1px solid #E6E2C3;
+  padding-left: 30px;
 }
 
 #main-nav button {
@@ -344,15 +353,13 @@ model-viewer > #ar-prompt > img {
   .image-right {
     background: url(../images/earbud-x-ray.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
   }
   .image-left {
     background: url(../images/earbud.jpg) no-repeat;
     background-size: cover;
-    background-position: center center;
     width: 50%;
-    background-attachment: fixed;
   }
   .image-drag {
     background-color: #666;
