@@ -64,7 +64,7 @@ a {
   display: block;
   padding: 5px 0 10px 0;
   text-align: center;
-  color: #080808;
+  color: #E6E2C3;
 }
 
 #main-nav ul li a:hover {
@@ -84,28 +84,28 @@ a {
 }
 
 #logo {
-  max-width: 150px;
-  margin-bottom: 10px;
+  max-width: 90px;
+  margin-bottom: 20px;
   margin-left: 130px;
   margin-top: -30px;
 }
 
+#sticky-nav-con {
+  position: sticky;
+  background-color: #2B2730;
+  top: 0px;
+  border-bottom: solid 1px #E6E2C3;
+  z-index: 1;
+}
+
 @media screen and (min-width: 768px) {
-  #sticky-nav-con {
-    position: sticky;
-    background-color: #fff;
-    top: 0px;
-    border-bottom: solid 1px #c3c3c3;
-    z-index: 1;
-  }
   #button {
     display: none;
   }
   #logo {
-    width: 90%;
-    margin-top: 10px;
+    margin-top: 40px;
     order: -1;
-    margin-left: 30px;
+    margin-left: 170px;
   }
   #burger-con {
     display: block;
@@ -127,7 +127,7 @@ a {
   #main-nav {
     margin-top: 4%;
     margin-bottom: 4%;
-    border-left: 1px solid #dce0f3;
+    border-left: 1px solid #E6E2C3;
     padding-left: 30px;
   }
 }
