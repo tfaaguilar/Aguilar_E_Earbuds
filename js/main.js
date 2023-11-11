@@ -6,8 +6,7 @@ const logo = document.getElementById('logo');
         duration: 1, 
         x: 20, 
         rotation: 360, 
-        scale: 1.2 , 
-        backgroundColor: "#2C3639", 
+        scale: 1.3, 
         ease: "power2.inOut", 
     });
 
