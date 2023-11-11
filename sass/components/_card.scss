@@ -1,10 +1,15 @@
 
 #hero-con {
-    height: 600px;
+    height: 1080px;
 }
 
 #atributes div {
     height: 300px;
+    
+}
+
+#atributes h2 {
+    margin-top: 600px;
 }
 
 #hotspots div {
@@ -14,6 +19,12 @@
 #caracteristics div {
     height: 300px;
 }
+
+#explode-view {
+    max-width: 100%;
+}
+
+
 
 #xray div {
     height: 600px;
