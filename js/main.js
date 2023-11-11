@@ -2,13 +2,12 @@
 
 const logo = document.getElementById('logo');
 
-    gsap.to(logo, {
-        duration: 1, 
-        x: 20, 
-        rotation: 360, 
-        scale: 1.3, 
-        ease: "power2.inOut", 
-    });
+gsap.to(logo, {
+    duration: 1, 
+    x: 20, 
+    scale: 2, // Aumentar el tamaño al doble
+    ease: "power2.inOut", 
+});
 
 
 //Burger menu
@@ -47,8 +46,8 @@ const logo = document.getElementById('logo');
     },
     {
         tittle: "All day comfort",
-        text: "Enjoy exceptional comfort that lasts all day. Our earbuds are designed for extended wear, ensuring you can listen to your favorite tunes or make calls in complete comfort from morning to night.",
-        image:"images/plastic_pin.png",
+        text: "Enjoy exceptional comfort. Our earbuds are designed for extended wear, ensuring you can listen to your favorite tunes or make calls in complete comfort from morning to night.",
+        image:"images/plastic.png",
     },
     {
         tittle: "Charging fast",
@@ -108,6 +107,18 @@ const logo = document.getElementById('logo');
     hotspot.addEventListener("mouseover", showInfo);
     hotspot.addEventListener("mouseout", hideInfo);
   });
+
+  function showInfo() {
+  let selected = document.querySelector(`#${this.slot}`);
+  gsap.to(selected, { scale: 1.1, duration: 0.3 });
+  gsap.to(selected, 1, { autoAlpha: 1 });
+}
+
+function hideInfo() {
+  let selected = document.querySelector(`#${this.slot}`);
+  gsap.to(selected, { scale: 1, duration: 0.3 });
+  gsap.to(selected, 1, { autoAlpha: 0 });
+}
 })();
 
 
