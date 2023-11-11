@@ -3,15 +3,7 @@
 
 #atributes div {
     height: 300px;
-    margin-bottom: 100px;
-}
-
-#hotspots div {
-    height: 600px;
-}
-
-#caracteristics div {
-    height: 300px;
+    margin-bottom: 150px;
 }
 
 #explode-view {
@@ -22,26 +14,29 @@ h2, h3 {
     text-align: center;
 }
 
-#xray div {
-    height: 600px;
-}
+
+
 
 #xray a {
     margin-left: 500px;
     margin-right: 500px;
+    
 }
 
-#options div {
-    height: 200px ;
-}
-
-
-#plastic div {
-    height: 300px ;
-}
 
 #plastic a {
     margin-left: 500px;
     margin-right: 500px;
 }
 
+#options {
+    margin-top: 50px;
+}
+
+#options img {
+  margin-left: 130px;
+}
+
+#options p {
+    margin-left: 40px;
+}
