@@ -117,37 +117,33 @@ const logo = document.getElementById('logo');
 (() => {
     const canvas = document.querySelector("#explode-view");
     const context = canvas.getContext("2d");
-    canvas.width = 1920;
-    canvas.height = 1080;
+    canvas.width = 1900;
+    canvas.height = 1060;
 
-    const frameCount = 450; // 450 imagenes from Benett
+    const frameCount = 501;
 
-    const images = []; // an array to hold all of our images
-    //create an object literal with a property frame to hold the current frame
+    const images = []; 
     const buds = {
         frame: 0
     };
 
     for (let i = 0; i < frameCount; i++) {
-        //console.log(i);
-        // const img = new Image(); otra forma:
         const img = document.createElement("img");
         // need to recreate a string: images/explode_0001.webp
-        img.src = `images/explode_${(i + 1).toString().padStart(4, '0')}.webp`;
+        img.src = `images/EB1_${(i + 1).toString().padStart(4, '0')}.jpg`;
         images.push(img);
     }
-    //console.table(images)
-
-    //Not actually animating a DOM element, but rather an object wich contains a frame count
+    
     gsap.to(buds, {
-        frame: 449,
+        frame: 500,
         snap: "frame", // to get full numbers instead of decimals
         scrollTrigger: {
-            trigger: "#explode-view", // our canvas element is gonna be the trigger
+            trigger: "#explode-view",
             pin: true,
             scrub: 1,
-            start: "top top",
-            markers: true
+          start: "top top",
+            end: "bottom 20",
+            markers: false
         },
         onUpdate: render
     })
@@ -155,10 +151,7 @@ const logo = document.getElementById('logo');
     images[0].addEventListener("onload", render);
 
     function render() {
-        //console.log(buds.frame);
-        //console.log(images[buds.frame]);
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.drawImage(images[buds.frame], 0, 0);
     }
-
 })();
