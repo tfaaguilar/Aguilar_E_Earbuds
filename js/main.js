@@ -154,3 +154,50 @@ const logo = document.getElementById('logo');
         context.drawImage(images[buds.frame], 0, 0);
     }
 })();
+
+//X-RAY view
+
+(() => {
+    let imageCon = document.querySelector('#imageCon'),
+        drag = document.querySelector('.image-drag'),
+        left = document.querySelector('.image-left'),
+        dragging = false,
+        min = 0,
+        max = imageCon.offsetWidth;
+
+
+        function onDown(){
+            dragging = true;
+            console.log("set to true")
+        }
+
+
+        function onUp(){
+            dragging = false;
+            console.log("set to flase")
+        }
+
+
+        function onMove(event) {
+            //console.log("on moved called");
+            if(dragging===true){
+                    //console.log("dragging");
+                    let x = event.clientX - imageCon.getBoundingClientRect().left;
+
+                    if(x < min){
+                        x = min;
+                    }
+                    else if(x >  max){
+                        x = max-15;
+                    }
+
+                    drag.style.left = x + "px";
+                    left.style.width = x + "px";
+            }
+
+        }
+
+        drag.addEventListener('mousedown',onDown);
+        document.body.addEventListener('mouseup',onUp);
+        document.body.addEventListener('mousemove',onMove);
+})();
