@@ -1,9 +1,9 @@
-//@use '../abstracts' as a;
-@use '../abstracts/variables' as v;
+@use '../abstracts' as a;
+//@use '../abstracts/variables' as v;
 
 #footer-hero {
-    background-color: v.$secondary-color;
-    border-top: solid 1px v.$accent-color;
+    background-color: a.$secondary-color;
+    border-top: solid 1px a.$accent-color;
     margin-top: 20px;
 }
 
@@ -16,7 +16,7 @@
 }
 
 #social-icons {
-    color: v.$accent-color;
+    color: a.$accent-color;
 }
 
 #social-icons i {
@@ -27,7 +27,7 @@
 
 .line-seperator {
    margin-top: 20px;
-   border-top: solid 3px v.$accent-color;
+   border-top: solid 3px a.$accent-color;
    padding-top: 20px;
 }
 
@@ -48,29 +48,29 @@ input, textarea {
 input, textarea {
     width: 300px;
     padding: 8px;
-    border: 2px solid v.$primary-color;
-    background-color: v.$accent-color;
+    border: 2px solid a.$primary-color;
+    background-color: a.$accent-color;
     margin-bottom: 0px;
     border-radius: 5px;
-    font-family: v.$body-font-family;
+    font-family: a.$body-font-family;
 }
 
 input[type="submit"] {
     margin-left:200px;
     margin-top: 10px;
     width: 100px;
-    background-color: v.$primary-color;
-    color: v.$accent-color;
+    background-color: a.$primary-color;
+    color: a.$accent-color;
     border: none;
     transition: all 200ms ease-in;
     align-self: flex-end;
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    font-family: v.$body-font-family;
+    font-family: a.$body-font-family;
 }
 
 input[type="submit"]:hover {
-    background-color: v.$secondary-color;
+    background-color: a.$secondary-color;
     cursor: pointer;
 }
 
