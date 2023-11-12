@@ -14,10 +14,11 @@ h2 {
 
 h3 {
     font-family: v.$heading-font-family;
-    font-size: 26px;
+    font-size: 28px;
     color: v.$accent-color;
     margin-bottom: 20px;
-    font-weight: 300;
+    font-weight: 500;
+    color: v.$secondary-color;
 }
 
 p {
@@ -25,4 +26,5 @@ p {
     margin-bottom: 20px;
     font-size: 20px;
     color: v.$accent-color;
+    font-weight: 300;
 }

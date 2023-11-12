@@ -1,3 +1,5 @@
+
+  
   model-viewer {
     width: auto;
     max-width: 1200px;
@@ -31,7 +33,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
     color: rgba(252, 250, 250, 0.8);
     display: block;
-    font-family: Futura, Helvetica Neue, sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 14px;
     //font-weight: 700;
     left: calc(100% + 1em);
@@ -48,13 +50,15 @@
   .HotspotAnnotation p {
     color: #fcf9f9;
     line-height: 22px;
-    font-weight: 300;
+    font-size: 16px;
     margin-left: 90px;
   }
 
   .HotspotAnnotation h2 {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
   }
 
   .HotspotAnnotation {
@@ -88,7 +92,7 @@
     white-space: nowrap;
     bottom: 16px;
     padding: 0px 16px 0px 40px;
-    font-family: Roboto Regular, Helvetica Neue, sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-size: 14px;
     color:#4285f4;
     height: 36px;
