@@ -44,8 +44,8 @@ h2, h3 {
     border-radius: 5px;
     font-family: a.$body-font-family;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-    margin-left: 450px;
-    margin-right: 450px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 #options a:hover {
@@ -70,4 +70,14 @@ h2, h3 {
 #caracteristics a:hover {
     background-color: a.$primary-color;
     cursor: pointer;
+}
+
+@media screen and (min-width: 768px) 
+
+{
+#options a {
+    
+    margin-left: 450px;
+    margin-right: 450px;
+}
 }
