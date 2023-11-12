@@ -2,7 +2,7 @@
 
 
 body {
-   background-color: #565575;
+   background-color: a.$primary-color;
    font-family: a.$heading-font-family;
 }
 
@@ -14,7 +14,7 @@ a {
    #main-nav {
       margin-top: 4%;
       margin-bottom: 4%;
-      border-left: 1px solid #E6E2C3;
+      border-left: 1px solid a.$secondary-color;
       padding-left: 30px;
       
    }
@@ -63,7 +63,7 @@ a {
    padding: 5px 0 10px 0;
    text-align: center;
    color: #E6E2C3;
-   
+   font-size: 20px;
 }
 
 #main-nav ul li a:hover {
@@ -106,7 +106,7 @@ a {
 
    #logo {
       
-      margin-top: 40px;
+      margin-top: 50px;
       order: -1;
       margin-left: 170px;
    }
