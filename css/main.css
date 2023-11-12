@@ -164,11 +164,11 @@ a {
 
 #social-icons {
   color: #E6E2C3;
-  margin-top: 60px;
 }
 
 #social-icons i {
   font-size: 30px;
+  margin-bottom: 20px;
 }
 
 .line-seperator {
@@ -188,8 +188,7 @@ input, textarea {
 }
 
 #contact-form {
-  background-color: #E6E2C3;
-  text-align: center;
+  margin-top: 100px;
 }
 
 input, textarea {
@@ -219,6 +218,10 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #2B2730;
   cursor: pointer;
+}
+
+#price-policy {
+  text-align: center;
 }
 
 #atributes div {

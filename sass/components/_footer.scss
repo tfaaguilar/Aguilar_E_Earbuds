@@ -18,13 +18,12 @@
 
 #social-icons {
     color: v.$accent-color;
-    margin-top: 60px;
 }
 
 #social-icons i {
     font-size: 30px;
+    margin-bottom: 20px;
 }
-
 
 
 .line-seperator {
@@ -44,8 +43,7 @@ input, textarea {
 }
 
 #contact-form {
-      background-color: v.$accent-color;
-      text-align: center;
+      margin-top: 100px;
 }
 
 input, textarea {
@@ -75,4 +73,8 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: v.$secondary-color;
     cursor: pointer;
+}
+
+#price-policy {
+    text-align: center;
 }
