@@ -1,5 +1,37 @@
 @use '../abstracts' as a;
 
-footer {
-    height: 350px;
+#footer-hero {
+    background-color: #2B2730;
+    border-top: solid 1px #E6E2C3;
+    margin-top: 20px;
+}
+
+#footer-contact-info {
+    margin-top: 40px;
+}
+
+#footer-contact-info img {
+    margin-bottom: 20px;
+    
+}
+
+#social-icons {
+    color: #E6E2C3;
+    margin-top: 60px;
+}
+
+#social-icons i {
+    font-size: 30px;
+}
+
+
+
+.line-seperator {
+   margin-top: 20px;
+   border-top: solid 3px #E6E2C3;
+   padding-top: 20px;
+}
+
+#footer-privacy .line-seperator {
+   margin-top: 0px;
 }
