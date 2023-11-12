@@ -1,4 +1,4 @@
-@use '../abstracts' as a;
+//@use '../abstracts' as a;
 @use '../abstracts/variables' as v;
 
 #footer-hero {
@@ -13,7 +13,6 @@
 
 #footer-contact-info img {
     margin-bottom: 20px;
-    
 }
 
 #social-icons {
@@ -21,7 +20,7 @@
 }
 
 #social-icons i {
-    font-size: 30px;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
