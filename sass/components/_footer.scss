@@ -1,8 +1,9 @@
 @use '../abstracts' as a;
+@use '../abstracts/variables' as v;
 
 #footer-hero {
-    background-color: #2B2730;
-    border-top: solid 1px #E6E2C3;
+    background-color: v.$secondary-color;
+    border-top: solid 1px v.$accent-color;
     margin-top: 20px;
 }
 
@@ -16,7 +17,7 @@
 }
 
 #social-icons {
-    color: #E6E2C3;
+    color: v.$accent-color;
     margin-top: 60px;
 }
 
@@ -28,10 +29,50 @@
 
 .line-seperator {
    margin-top: 20px;
-   border-top: solid 3px #E6E2C3;
+   border-top: solid 3px v.$accent-color;
    padding-top: 20px;
 }
 
 #footer-privacy .line-seperator {
    margin-top: 0px;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+#contact-form {
+      background-color: v.$accent-color;
+      text-align: center;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 8px;
+    border: 2px solid v.$primary-color;
+    background-color: v.$accent-color;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    font-family: v.$body-font-family;
+}
+
+input[type="submit"] {
+    margin-left:200px;
+    margin-top: 10px;
+    width: 100px;
+    background-color: v.$primary-color;
+    color: v.$accent-color;
+    border: none;
+    transition: all 200ms ease-in;
+    align-self: flex-end;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: v.$body-font-family;
+}
+
+input[type="submit"]:hover {
+    background-color: v.$secondary-color;
+    cursor: pointer;
 }
