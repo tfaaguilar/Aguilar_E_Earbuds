@@ -219,7 +219,7 @@ const imagenes = document.querySelectorAll('.imagenAnimada');
 
     function crearAnimacion(imagen) {
         const tl = gsap.timeline({ paused: true });
-       tl.to(imagen, { scale: 0.8, opacity: 0.5, duration: 0.3 }); // Disminuye el tamaño al 80% y ajusta la opacidad
+       tl.to(imagen, { scale: 0.8, opacity: 0.5, duration: 0.3 });
       
         
         imagen.addEventListener('mouseenter', () => tl.play());

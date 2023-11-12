@@ -5,6 +5,7 @@
     background-color: a.$secondary-color;
     border-top: solid 1px a.$accent-color;
     margin-top: 20px;
+    text-align: center;
 }
 
 #footer-contact-info {
@@ -12,6 +13,7 @@
 }
 
 #footer-contact-info img {
+    max-width: 50%;
     margin-bottom: 20px;
 }
 
@@ -22,7 +24,73 @@
 #social-icons i {
     font-size: 24px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
+
+
+.line-seperator {
+   margin-top: 20px;
+   border-top: solid 3px a.$accent-color;
+   padding-top: 20px;
+}
+
+#footer-privacy .line-seperator {
+   margin-top: 0px;
+}
+
+input, textarea {
+   display: block;
+   margin: 0;
+   padding: 0;
+}
+
+#contact-form {
+      margin-left: 100px;
+      text-align: center;
+}
+
+#contact-form p {
+    margin-right: 100px ;
+}
+
+input, textarea {
+    width: 250px;
+    padding: 8px;
+    border: 2px solid a.$primary-color;
+    background-color: a.$accent-color;
+    margin-bottom: 0px;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+}
+
+input[type="submit"] {
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 100px;
+    background-color: a.$primary-color;
+    color: a.$accent-color;
+    border: none;
+    transition: all 200ms ease-in;
+    align-self: flex-end;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    font-family: a.$body-font-family;
+}
+
+input[type="submit"]:hover {
+    background-color: a.$secondary-color;
+    cursor: pointer;
+}
+
+#price-policy {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    #footer-contact-info img {
+    max-width: 100%; }
 
 
 .line-seperator {
@@ -76,4 +144,5 @@ input[type="submit"]:hover {
 
 #price-policy {
     text-align: center;
+}
 }
