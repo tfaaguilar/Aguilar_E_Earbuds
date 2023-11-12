@@ -1,5 +1,4 @@
-
-
+@use '../abstracts' as a;
 
 #atributes div {
     height: 300px;
@@ -14,19 +13,12 @@ h2, h3 {
     text-align: center;
 }
 
-
-
-
-#xray a {
-    margin-left: 500px;
-    margin-right: 500px;
-    
+#xray {
+    margin-bottom: 100px;
 }
 
-
-#plastic a {
-    margin-left: 500px;
-    margin-right: 500px;
+#plastic p {
+    text-align: center;
 }
 
 #options {
@@ -39,4 +31,39 @@ h2, h3 {
 
 #options p {
     margin-left: 40px;
+}
+
+#options a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 450px;
+    margin-right: 450px;
+}
+
+#options a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
+}
+
+#caracteristics {
+    margin-bottom: 80px;
+}
+
+#caracteristics a {
+    color: a.$accent-color;
+    padding: 6px;
+    background-color: a.$secondary-color;
+    border-radius: 5px;
+    font-family: a.$body-font-family;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    margin-left: 150px;
+}
+
+#caracteristics a:hover {
+    background-color: a.$primary-color;
+    cursor: pointer;
 }
