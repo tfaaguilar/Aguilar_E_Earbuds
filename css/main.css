@@ -89,18 +89,14 @@ a {
 
 #main-nav ul li a {
   display: block;
-  padding: 5px 0 10px 0;
+  padding: 2px 0 5px 0;
   text-align: center;
   color: #E6E2C3;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 #main-nav ul li a:hover {
   color: #565575;
-}
-
-#main-nav ul li {
-  border-bottom: 1px solid #efefef;
 }
 
 #main-nav ul li:first-child {
@@ -114,8 +110,8 @@ a {
 #logo {
   max-width: 90px;
   margin-bottom: 20px;
-  margin-left: 130px;
-  margin-top: -30px;
+  margin-left: 140px;
+  margin-top: -40px;
 }
 
 #sticky-nav-con {
