@@ -45,13 +45,11 @@ input, textarea {
 }
 
 #contact-form {
-      margin-left: 100px;
+      
       text-align: center;
 }
 
-#contact-form p {
-    margin-right: 100px ;
-}
+
 
 input, textarea {
     width: 250px;
@@ -59,12 +57,13 @@ input, textarea {
     border: 2px solid a.$primary-color;
     background-color: a.$accent-color;
     margin-bottom: 0px;
+    margin-left: 80px;
     border-radius: 5px;
     font-family: a.$body-font-family;
 }
 
 input[type="submit"] {
-    margin-left: 80px;
+    margin-left: 150px;
     margin-top: 10px;
     width: 100px;
     background-color: a.$primary-color;
@@ -111,7 +110,10 @@ input, textarea {
 
 #contact-form {
       margin-top: 100px;
+      margin-left: 0px;
 }
+
+
 
 input, textarea {
     width: 300px;
